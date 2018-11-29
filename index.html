@@ -5,20 +5,24 @@
   <title>Интернет-магазин: Девайс</title>
 </head>
 <body>
-<header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="img/logo.svg" width="166.99" height="53.76" alt="Логотип Девайса">
-    </a>
+  <header class="main-header">
+    <nav class="main-navigation" aria-label="Содержимое">
+      <a class="main-header-logo" href="#">
+        <img src="img/logo.svg" width="166.99" height="53.76" alt="Логотип Девайса">
+      </a>
       <h1 class="visually-hidden">Интернет-магазин: Девайс</h1>
-       <div class="search-navigation">Поиск по сайту</div>
-       <ul>
-         <li><a href="login.html" class="login-link">Войти</a></li>
-         <li><a href="compare.html" class="compare-link">Сравнить</li>
-         <li><a href="bag.html" class="bag-link">Корзина</li>
-       </ul>
-        <ul class="site-navigation">
-         <li><a href="#" class="header-link">Каталог Товаров</a>
+      <form action="/search" method="get">
+        <input name="search" placeholder="Поиск по сайту" type="search" id="search">
+        <input name type="submit" value="Найти">
+      </form>
+      <ul>
+        <li><a href="login.html" class="login-link">Войти</a></li>
+        <li><a href="compare.html" class="compare-link">Сравнить</li>
+        <li><a href="bag.html" class="bag-link">Корзина</li>
+      </ul>
+      <ul class="site-navigation">
+        <li>
+          <a href="#" class="header-link">Каталог Товаров</a>
           <ul class="menu-catalog">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
@@ -27,26 +31,15 @@
             <li><a href="#">Умные часы</a></li>
             <li><a href="#">Квадрокоптеры</a></li>
           </ul>
-         </li>
-         <li><a href="#" class="header-link">Доставка</a></li>
-         <li><a href="#" class="header-link">Гарантия</a></li>
-         <li><a href="#" class="header-link">Контакты</a></li>
-        </ul>
-  <nav>
-  <!-- Тут будет слайдер -->
-
-</header>
+        </li>
+        <li><a href="#" class="header-link">Доставка</a></li>
+        <li><a href="#" class="header-link">Гарантия</a></li>
+        <li><a href="#" class="header-link">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- Тут будет слайдер -->
+  </header>
  <main class="main-class">
-  <section class="main-catalog">
-   <ul class="catalog">
-    <li><a href="#"><img src="#.svg" width="50" height="50" alt="Виртуальная реальность"></a></li>
-    <li><a href="#"><img src="#.svg" width="50" height="50" alt="Моноподы для селфи"></a></li>
-    <li><a href="#"><img src="#.svg" width="50" height="50" alt="Экшн-камеры"></a></li>
-    <li><a href="#"><img src="#.svg" width="50" height="50" alt="Фитнес-браслеты"></a></li>
-    <li><a href="#"><img src="#.svg" width="50" height="50" alt="Умные часы"></a></li>
-    <li><a href="#"><img src="#.svg" width="50" height="50" alt="Квадрокоптеры"></a></li>
-   </ul>
-  </section>
   <section class="services">
     <ul>
       <li>
@@ -96,7 +89,7 @@
      <li><a href="compare.html" class="footer-compare-link">Сравнить</li>
      <li><a href="bag.html" class="footer-bag-link">Корзина</li>
    </ul>
-   <p class="footer-address">
+   <p class="footer-address" aria-label="Адрес">
       г. Москва, ул. Строителей, 15
    </p>
    <ul>
@@ -104,15 +97,15 @@
     <li><a href="#">Гарантия</a></li>
     <li><a href="#">Контакты</a></li>
    </ul>
-   <p class="footer-phone">
+   <p class="footer-phone" aria-label="Телефон">
       Тел.: +7 (495) 495-95-95
    </p>
    <!-- Непонятная желтая черточка -->
    <div class="footer-social">
     <ul>
-      <li><a class="social-button" href="#">Facebook</a></li>
-      <li><a class="social-button" href="#">Instagram</a></li>
-      <li><a class="social-button" href="#">Twitter</a></li>
+      <li><a class="social-icon social-icon-fb" href="#" aria-label="Девайс на Фейсбуке">Facebook</a></li>
+      <li><a class="social-icon social-icon-ig" href="#" aria-label="Девайс в Инстаграме">Instagram</a></li>
+      <li><a class="social-icon social-icon-tw" href="#" aria-label="Девайс в Твиттере">Twitter</a></li>
     </ul>
    </div>
    <p class="footer-copyright">
