@@ -40,6 +40,31 @@
     <!-- Тут будет слайдер -->
   </header>
  <main class="main-class">
+  <section class="write-us">
+     <button class="close-button" type="button">
+       Закрыть
+     </button>
+     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+       <p>
+           <label for="user-name">Ваше имя:</label>
+           <br>
+           <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+         </p>
+         <p>
+           <label for="user-email">Ваш e-mail:</label>
+           <br>
+           <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+         </p>
+         <p>
+           <label for="mail">Текст письма:</label>
+           <br>
+           <textarea id="mail" type="text" name="mail" placeholder="В свободной форме"></textarea>
+         </p>
+         <button class="write-us-send" type="submit">
+           Отправить
+         </button>
+     </form>
+  </section>
   <section class="services">
     <ul>
       <li>
@@ -71,6 +96,17 @@
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
     <!-- карта -->
+  </section>
+  <section class="modal modal-map">
+      <button class="close-button" type="button">
+        Закрыть
+      </button>
+    <h2 class="visually-hidden">
+      Как до нас добраться
+    </h2>
+    <p>
+      <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+    </p>
   </section>
   <section class="More-about-us">
     <ul>
