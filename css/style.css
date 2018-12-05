@@ -193,3 +193,51 @@ legend,
   color: #000000;
   letter-spacing: 0.14px;
 }
+
+.filter {
+  background-color: #efefef;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  position:relative;
+}
+
+legend:before{
+  position:absolute;
+  top:-15px;
+  left:0;
+  width:201px;
+  border-top:2px solid #000000;
+  content:"";
+}
+
+.filter ul li {
+  list-style: none;
+  line-height: 17px;
+  padding-left:0;
+}
+
+/* Разобраться с чек боксами, что бы они подсвечивались, а не текст
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #FFFFFF;
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+}
+/*
+
+/* Сделать ховер карточки товара
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+*/
+
+.pagination-list {
+  list-style: none;
+}
