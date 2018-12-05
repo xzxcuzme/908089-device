@@ -23,9 +23,42 @@ a {
   text-decoration: none;
 }
 
-.search {
-
+.search-string {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.302);
+  letter-spacing: 0.15px;
+  background-color: transparent;
+  border: 0px;
 }
+
+.search:before {
+
+  image: url("img/search.svg");
+  content:"2222";
+}
+
+/* Не работает ховер и фокус по поиску
+.search-string:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-string:focus {
+  color: rgba(0, 0, 0);
+  border:0px;
+}
+
+.search-botton {
+  visibility: hidden;
+}
+
+.search-botton:hover {
+  visibility: visible;
+}
+
+.search-botton:focus {
+  visibility: visible;
+}
+*/
 
 .main-header {
   color: #ffffff;
@@ -206,7 +239,7 @@ legend {
   position:relative;
 }
 
-legend:before{
+legend:before {
   position:absolute;
   top:-15px;
   left:0;
