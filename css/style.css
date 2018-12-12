@@ -362,7 +362,7 @@ legend:before {
 .main-footer-logo {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
-  line-height: 10px;
+  line-height: 48px;
   font-weight: 700;
   color: rgb(255, 198, 0);
   letter-spacing: 0.48px;
@@ -447,4 +447,45 @@ background-color: rgba(150, 50, 100, 0.2);
   /* Временно для сетки */
  min-height: 748px;
  width: 560px;
+}
+
+.main-footer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+   /* Временно для сетки */
+
+   min-height: 323px;
+   padding: 60px 0;
+}
+footer * {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.main-footer .footer-first-floor {
+  display: flex;
+}
+
+.footer-first-floor {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-footer-logo {
+  margin: 0;
+width: 177px;
+  /* Временно для сетки */
+  min-height: 64px;
+  margin-right: 700px;
+}
+
+.user-navigation-footer {
+  margin: 0;
+width: 300px;
+  /* Временно для сетки */
+  min-height: 64px;
+  margin-left: auto;
+display: flex;
+justify-content: space-between;
 }
