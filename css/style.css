@@ -72,7 +72,7 @@ a {
 }
 
 .main-header {
-  background-color: #f7e296;
+  background-color: rgba(255, 255, 255, 0.2);
   width: 1160px;
   height: 186px;
   margin-left: auto;
@@ -153,7 +153,9 @@ a {
 }
 
 .write-us,
-.modal-map {
+.modal-map,
+.services,
+.brands {
   display: none;
 }
 
@@ -383,8 +385,8 @@ body {
 }
 
 body {
-  /* Временно для сетки */
-  background-image: url(../img/device-index.jpg);
+  /* Временно для сетки background-image: url(../img/device-index.jpg);*/
+
   background-size: 1440px auto;
   background-repeat: no-repeat;
 }
@@ -399,8 +401,50 @@ header {
 }
 
 .main-header {
-  margin-bottom: 904px;
+  margin-bottom: 1495px;
 
   /* Временно для сетки */
   min-height: 186px;
+}
+.search {
+  margin: 0;
+  padding: 0;
+display: flex;
+  list-style: none;
+background-color: rgba(150, 50, 100, 0.2);
+    /* Временно для сетки */
+  min-height: 68px;
+
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+display: flex;
+  list-style: none;
+background-color: rgba(150, 50, 100, 0.2);
+    /* Временно для сетки */
+  min-height: 68px;
+
+}
+
+.index-columns {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+ padding: 50px 140px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.about-us {
+  /* Временно для сетки */
+ min-height: 748px;
+ width: 480px;
+}
+
+.contacts {
+  /* Временно для сетки */
+ min-height: 748px;
+ width: 560px;
 }
