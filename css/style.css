@@ -67,6 +67,9 @@ a {
   visibility: visible;
 }
 */
+.margin-bottom {
+  margin-bottom: 40px;
+}
 
 .main-header {
   background-color: #f7e296;
@@ -74,7 +77,6 @@ a {
   height: 186px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .main-footer {
@@ -337,14 +339,14 @@ legend:before {
 .main-header-logo {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
-  line-height: 10px;
+  line-height: 48px;
   font-weight: 700;
   color: #000000;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  padding-left: 58px;
+  padding-left: 57px;
   position: absolute;
-  top: 27px;
+  top: 15px;
 }
 
 .main-header-logo:hover {
@@ -381,8 +383,8 @@ body {
 }
 
 body {
-  /* Временно для сетки background-image: url(../img/device-index.jpg);*/
-
+  /* Временно для сетки */
+  background-image: url(../img/device-index.jpg);
   background-size: 1440px auto;
   background-repeat: no-repeat;
 }
@@ -390,10 +392,6 @@ body {
 .menu-catalog,
 .visually-hidden {
   display: none;
-}
-
-.margin-bottom {
-  .margin-bottom: 40px;
 }
 
 header {
