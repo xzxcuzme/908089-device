@@ -54,52 +54,55 @@
       <li><a href="catalog.html">Каталог товар</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="colour-filter">
-          <legend>Цвет</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
-              <label for="black">Черный</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
-              <label for="white">Белый</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
-              <label for="blue">Синий</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
-              <label for="red">Красный</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
-              <label for="pink">Розовый</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="bluetooth-filter">
-          <legend>Bluetooth</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="true" id="filter-true" checked>
-              <label for="filter-true">Есть</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="false" id="filter-false">
-              <label for="filter-false">Нет</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit" class="filter-button button">
-            Показать
-        </button>
-      </form>
-    </section>
+    <div class="catalog-columns">
+    <div class="container-filter">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="colour-filter">
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
+                <label for="white">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="bluetooth-filter">
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="true" id="filter-true" checked>
+                <label for="filter-true">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="false" id="filter-false">
+                <label for="filter-false">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">
+              Показать
+          </button>
+        </form>
+      </section>
+    </div>
     <section class="catalog">
       <h2 class="visually-hidden">Список моноподов для селфи</h2>
       <ul class="catalog-list">
@@ -164,6 +167,7 @@
         <li class="pagination-item"><a href="#">Вперед</a></li>
       </ul>
     </section>
+    </div>
   </main>
   <footer class="main-footer">
     <div class="footer-first-floor">
