@@ -450,7 +450,7 @@ background-color: rgba(150, 50, 100, 0.2);
 }
 
 .main-footer {
-  width: 1200px;
+  width: 1440px;
   margin-left: auto;
   margin-right: auto;
    /* Временно для сетки */
@@ -468,24 +468,65 @@ footer * {
 
 .footer-first-floor {
   width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin-left: 140px;
+  justify-content:space-between;
+
 }
 
 .main-footer-logo {
   margin: 0;
-width: 177px;
+  width: 177px;
   /* Временно для сетки */
   min-height: 64px;
-  margin-right: 700px;
+
+
 }
 
 .user-navigation-footer {
   margin: 0;
-width: 300px;
+  width: 300px;
   /* Временно для сетки */
   min-height: 64px;
-  margin-left: auto;
+
+
 display: flex;
 justify-content: space-between;
+}
+
+.main-footer .footer-second-floor {
+  display: flex;
+
+}
+
+.footer-second-floor {
+  width: 1160px;
+  margin-left: 140px;
+  justify-content:space-between;
+}
+
+.footer-address {
+
+  width: 220px;
+  /* Временно для сетки */
+  min-height: 32px;
+ /* Тут на глаз маргин подобран, нужно исправить, и понять, почему при 160px уезжает навигация */
+}
+
+.site-navigation-footer {
+
+  width: 440px;
+  /* Временно для сетки */
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.footer-phone {
+
+  width: 220px;
+  /* Временно для сетки */
+  min-height: 32px;
+  display: flex;
+  justify-content: flex-end;
+
 }
