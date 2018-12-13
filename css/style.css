@@ -8,14 +8,12 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.15px;
-
   background-color: #ffffff;
 }
 
@@ -41,8 +39,6 @@ a {
   width: 38px;
   height: 100%;
   border: none;
-
-
 }
 
 /* Не работает ховер и фокус по поиску
@@ -72,7 +68,7 @@ a {
 }
 
 .main-header {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #f7e296;
   width: 1160px;
   height: 186px;
   margin-left: auto;
@@ -82,6 +78,9 @@ a {
 .main-footer {
   color: #ffffff;
   background-color: #464646;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-link,
@@ -106,7 +105,8 @@ a {
 .brands-menu,
 .breadcrumbs,
 .catalog-list,
-.menu-catalog {
+.menu-catalog,
+.site-navigation {
   list-style: none;
 }
 
@@ -378,18 +378,7 @@ legend:before {
 }
 
 
-html,
-body {
-  min-width: 1440px;
-  min-height: 2795px;
-}
 
-body {
-  /* Временно для сетки background-image: url(../img/device-index.jpg);*/
-
-  background-size: 1440px auto;
-  background-repeat: no-repeat;
-}
 
 .menu-catalog,
 .visually-hidden {
@@ -400,42 +389,83 @@ header {
   weight: 1160px;
 }
 
+
+
 .main-header {
   margin-bottom: 1495px;
-
   /* Временно для сетки */
   min-height: 186px;
 }
-.search {
+
+.main-header .container,
+.main-header .site-container {
+  display: flex;
+  justify-content:space-between;
+
+}
+
+.container {
+  padding-top: 35px;
+  width: 1040px;
+  margin-left: 71px;
+  min-height: 25px;
+}
+
+.site-container {
+  padding-top: 20px;
+  width: 1040px;
+  margin-left: 71px;
+  min-height: 31px;
+}
+
+.site-navigation {
   margin: 0;
   padding: 0;
-display: flex;
-  list-style: none;
-background-color: rgba(150, 50, 100, 0.2);
-    /* Временно для сетки */
-  min-height: 68px;
+  width: 1040px;
+  /* Временно для сетки */
+  min-height: 31px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  padding: 0;
+  width: 220px;
+  /* Временно для сетки */
+  min-height: 25px;
+  display: flex;
 
 }
 
 .user-navigation {
   margin: 0;
   padding: 0;
-display: flex;
-  list-style: none;
-background-color: rgba(150, 50, 100, 0.2);
-    /* Временно для сетки */
-  min-height: 68px;
+  width: 500px;
+  /* Временно для сетки */
+  min-height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.site-navigation {
+  margin: 0;
+  padding-top: 60px;
+  width: 1040px;
+  /* Временно для сетки */
+  min-height: 31px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .index-columns {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
- padding: 50px 140px;
- display: flex;
- justify-content: space-between;
+  padding: 50px 140px;
+  display: flex;
+  justify-content: space-between;
 }
+
 
 .about-us {
   /* Временно для сетки */
@@ -518,7 +548,6 @@ background-color: rgba(150, 50, 100, 0.2);
   min-height: 32px;
   display: flex;
   justify-content: flex-end;
-
 }
 
 .main-footer .footer-third-floor {
@@ -529,8 +558,6 @@ background-color: rgba(150, 50, 100, 0.2);
   width: 1160px;
   margin-left: 140px;
   justify-content: flex-end;
-
-
 }
 
 .social-icon {
@@ -542,7 +569,6 @@ background-color: rgba(150, 50, 100, 0.2);
 }
 
 .footer-copyright {
-
   width: 60px;
   min-height: 32px;
   display: flex;
