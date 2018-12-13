@@ -392,9 +392,12 @@ header {
 
 
 .main-header {
-  margin-bottom: 1495px;
+  margin-bottom: 26px;
   /* Временно для сетки */
   min-height: 186px;
+}
+* {
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .main-header .container,
@@ -412,7 +415,6 @@ header {
 }
 
 .site-container {
-  padding-top: 20px;
   width: 1040px;
   margin-left: 71px;
   min-height: 31px;
@@ -574,4 +576,19 @@ header {
   display: flex;
   justify-content: flex-end;
   margin-left: 440px;
+}
+
+.breadcrumbs {
+  display: flex;
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.page-title {
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
 }
