@@ -390,7 +390,6 @@ header {
 }
 
 
-
 .main-header {
   margin-bottom: 26px;
   /* Временно для сетки */
@@ -445,6 +444,7 @@ header {
   min-height: 25px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .site-navigation {
