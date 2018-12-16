@@ -385,12 +385,8 @@ legend:before {
   display: none;
 }
 
-header {
-  weight: 1160px;
-}
-
-
 .main-header {
+  /* weight: 1160px;*/
   margin-top: 40px;
   margin-bottom: 26px;
   /* Временно для сетки */
@@ -671,4 +667,16 @@ header {
 
   /* Временно для сетки */
   min-height: 70px;
+}
+
+.more-about-us {
+  padding-top: 50px;
+}
+
+.write-us-bottom {
+  padding-top: 50px;
+}
+
+.contacts p {
+  padding-bottom:8px;
 }
