@@ -28,7 +28,7 @@
       <nav class="main-site-navigation">
         <ul class="site-navigation">
           <li>
-            <a href="#" class="header-link">Каталог Товаров</a>
+            <a href="#" class="header-link catalog-link">Каталог Товаров</a>
             <ul class="menu-catalog"> <!--https://htmlacademy.ru/courses/50/run/23 так делаь подменю -->
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
@@ -44,33 +44,26 @@
         </ul>
       </nav>
     </div>
-    <!-- Тут будет слайдер -->
+    <!-- Тут будет слайдер https://htmlacademy.ru/courses/76/run/20 -->
   </header>
   <img src="http://placehold.it/1440x1495" width="1440" height="1495">
  <main class="main-class">
   <section class="write-us">
-     <button class="close-button" type="button">
-       Закрыть
-     </button>
+    <button class="close-button" type="button">Закрыть</button>
      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
        <p>
-           <label for="user-name">Ваше имя:</label>
-           <br>
-           <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-         </p>
-         <p>
-           <label for="user-email">Ваш e-mail:</label>
-           <br>
-           <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
-         </p>
-         <p>
-           <label for="mail">Текст письма:</label>
-           <br>
-           <textarea id="mail" type="text" name="mail" placeholder="В свободной форме"></textarea>
-         </p>
-         <button class="write-us-send" type="submit">
-           Отправить
-         </button>
+         <label for="user-name">Ваше имя:</label>
+         <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+       </p>
+       <p>
+         <label for="user-email">Ваш e-mail:</label>
+         <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+       </p>
+       <p>
+         <label for="mail">Текст письма:</label>
+         <textarea id="mail" type="text" name="mail" placeholder="В свободной форме"></textarea>
+       </p>
+       <button class="write-us-send" type="submit">Отправить</button>
      </form>
   </section>
   <section class="services">
@@ -111,19 +104,16 @@
   <section class="contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-    <p></p>
     <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
     <section class="write-us-bottom">
       <ul class="info">
-        <li>напишите нам</li>
+        <li>напишите нам</li> <!--https://htmlacademy.ru/courses/71/run/22 https://htmlacademy.ru/courses/76/run/8 -->
       </ul>
     </section>
   </section>
   </div>
   <section class="modal modal-map">
-      <button class="close-button" type="button">
-        Закрыть
-      </button>
+      <button class="close-button" type="button">Закрыть</button>
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <p>
       <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
@@ -140,17 +130,13 @@
      </ul>
    </div>
    <div class="footer-second-floor">
-   <p class="footer-address" aria-label="Адрес">
-      г. Москва, ул. Строителей, 15
-   </p>
+   <p class="footer-address" aria-label="Адрес">г. Москва, ул. Строителей, 15</p>
    <ul class="site-navigation-footer">
     <li><a href="#">Доставка</a></li>
     <li><a href="#">Гарантия</a></li>
     <li><a href="#">Контакты</a></li>
    </ul>
-   <p class="footer-phone" aria-label="Телефон">
-      Тел.: +7 (495) 495-95-95
-   </p>
+   <p class="footer-phone" aria-label="Телефон">Тел.: +7 (495) 495-95-95</p>
    </div>
    <!-- Непонятная желтая черточка -->
    <div class="footer-third-floor">
@@ -168,6 +154,5 @@
    </p>
  </div>
 </footer>
-
 </body>
 </html>
