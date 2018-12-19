@@ -22,16 +22,35 @@ img {
   height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
 
 .search-string {
   font: inherit;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
   letter-spacing: 0.15px;
   background-color: transparent;
   border: 0px;
+  width: 315px;
 }
 
 
@@ -59,6 +78,14 @@ a {
   visibility: visible;
 }
 */
+
+.search-botton {
+  display: none;
+  width: 85px;
+  height: 50px;
+}
+
+
 .main-header {
   background-color: #f7e296;
   width: 1160px;
@@ -66,7 +93,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  margin-bottom: 26px;
+  margin-bottom: 260px;
 }
 
 .main-footer {
@@ -99,7 +126,6 @@ a {
 .brands-menu,
 .breadcrumbs,
 .catalog-list,
-.menu-catalog,
 .site-navigation {
   list-style: none;
 }
@@ -373,17 +399,13 @@ legend:before {
   color: rgba(255, 198, 0, 0.3);
 }
 
-.menu-catalog,
-.visually-hidden {
-  display: none;
-}
+
 
 
 .main-header .container,
 .main-header .site-container {
   display: flex;
-  justify-content:space-between;
-
+  align-items: center;
 }
 
 .container {
@@ -394,6 +416,7 @@ legend:before {
   width: 1040px;
   margin-left: 60px;
   margin-right: 60px;
+  height: 50px;
   background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
@@ -405,9 +428,8 @@ legend:before {
 
 .search::before {
   content:"";
-
   position: absolute;
-  top: 10px;
+  top: 17px;
   left: 3px;
   height: 16px;
   width: 16px;
@@ -441,8 +463,12 @@ legend:before {
 
 .search {
   padding: 0;
-  width: 220px;
+  width: 400px;
+  height: 50px;
   display: flex;
+  background: rgba(255, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 2px rgb(255, 0, 0);
+  margin-right: 100px;
 }
 
 .user-navigation {
@@ -450,19 +476,41 @@ legend:before {
   padding: 0;
   width: 500px;
   display: flex;
-  justify-content: space-between;
+
 }
+
 
 .user-navigation .login-link {
   position: relative;
   padding-left: 27px;
-  display:block;
+}
+
+.user-navigation .bag-link {
+  position: relative;
+  padding-left: 24px;
+
 }
 
 .user-navigation .compare-link {
   position: relative;
   padding-left: 20px;
+
 }
+
+.bag-link-header {
+  width: 80px;
+}
+
+.compare-link-header {
+  width: 100px;
+  margin-right:40px;
+  margin-left:180px;
+}
+
+.login-link-header {
+  width: 100px;
+}
+
 .site-navigation .catalog-link {
   position: relative;
   padding-right: 32px;
@@ -474,10 +522,7 @@ legend:before {
   box-shadow: inset 0 0 0 2px rgb(255, 0, 0);
 }
 
-.user-navigation .bag-link {
-  position: relative;
-  padding-left: 24px;
-}
+
 
 .login-link::before {
   content: "";
@@ -656,20 +701,43 @@ legend:before {
   justify-content: flex-end;
 }
 
+
+
 .social-icon {
   width: 160px;
-  /* Временно для сетки */
   display: flex;
   justify-content: space-between;
   padding-left: 0;
+  fill: #7e7e7e;
+  opacity: 0.3;
+}
+
+.social-icon:hover path {
+  opacity: 0.6;
+}
+
+.social-icon:focus path {
+  opacity: 0.1;
 }
 
 .footer-copyright {
   width: 60px;
-  min-height: 32px;
   display: flex;
   justify-content: flex-end;
   margin-left: 440px;
+}
+
+.footer-copyright .button {
+  width: 27px;
+  height: 35px;
+}
+
+.footer-copyright .button:hover path {
+  opacity: 0.6;
+}
+
+.footer-copyright .button:focus path {
+  opacity: 0.3;
 }
 
 .breadcrumbs {
@@ -778,4 +846,63 @@ legend:before {
 
 .contacts p {
   padding-bottom:8px;
+}
+
+.search-string {
+  opacity: 0.3;
+}
+
+.search-string:hover {
+  opacity: 0.6;
+}
+
+.search-string:focus {
+  opacity: 1;
+}
+
+.search-botton {
+  display: none;
+  outline: none;
+}
+
+.search:focus {
+  box-shadow: inset 0 0 0 2px rgb(0, 0, 0);
+}
+
+
+.search-string:focus + .search-botton {
+  display:block;
+  background: #f7e296;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.search-string:focus + .search-botton:hover {
+  background: #000000;
+  border: 2px solid #000000;
+  color: #FFFFFF;
+  }
+
+.search-string:focus + .search-botton:focus {
+  background-color: #FFFFFF;
+}
+
+.menu-catalog {
+  display: none;
+}
+
+.menu-catalog > li {
+  position: relative;
+  display: flex;
+}
+
+
+.site-navigation >li:hover .menu-catalog,
+.site-navigation >li:focus .menu-catalog {
+  display:flex;
+  width: 550px;
+  height: 130px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 10;
 }
