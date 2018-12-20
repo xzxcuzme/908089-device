@@ -105,7 +105,8 @@ a {
 }
 
 .header-link,
-.info {
+.more-about-us,
+.write-us-bottom {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -118,7 +119,6 @@ a {
 .user-navigation,
 .site-navigation ul,
 .menu-catalog,
-.info,
 .user-navigation-footer,
 .site-navigation-footer,
 .social-icon,
@@ -207,6 +207,14 @@ h2,
   font-weight: 700;
   color: #000000;
   letter-spacing: 0px;
+  list-style: none;
+}
+
+.ship li::before {
+  content: "";
+  background: url("../img/list-button.svg") no-repeat;
+
+  padding-right: 26px;
 }
 
 .site-navigation-footer {
@@ -476,9 +484,7 @@ legend:before {
   padding: 0;
   width: 500px;
   display: flex;
-
 }
-
 
 .user-navigation .login-link {
   position: relative;
@@ -498,7 +504,7 @@ legend:before {
 }
 
 .bag-link-header {
-  width: 80px;
+  width: 85px;
 }
 
 .compare-link-header {
@@ -509,11 +515,6 @@ legend:before {
 
 .login-link-header {
   width: 100px;
-}
-
-.site-navigation .catalog-link {
-  position: relative;
-  padding-right: 32px;
 }
 
 .user-navigation li,
@@ -564,13 +565,18 @@ legend:before {
   content: "";
   position: absolute;
   top: 4px;
-  right: 0px;
+  right: -4px;
   width: 16px;
   height: 16px;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+}
+
+.site-navigation .catalog-link {
+  position: relative;
+  padding-right: 0px;
 }
 
 .login-link:hover::before,
@@ -598,86 +604,214 @@ legend:before {
   display: block;
 }
 
-.index-columns {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px 140px;
-  display: flex;
-  justify-content: space-between;
+.site-catalog {
+  width:240px;
 }
 
+.site-ship {
+  margin-left: 300px;
+  width:120px;
+}
+
+.site-guarantee {
+  margin-left: 40px;
+  width:120px;
+}
+
+.site-contacts {
+  margin-left: 100px;
+  width:120px;
+}
+
+.index-columns {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.index-columns h2 {
+  margin: 0;
+  margin-top: 140px;
+  margin-bottom: 45px;
+}
+
+.about-us p {
+  margin: 0;
+  margin-bottom: 30px;
+  width: 475px;
+}
+
+.about-us p:nth-child(3) {
+  margin-bottom: 65px;
+}
+
+.more-about-us {
+  width: 260px;
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 90px;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+.write-us-bottom {
+  width: 260px;
+  text-align: center;
+  margin-top: 71px;
+  margin-bottom: 0px;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
 
 .about-us {
-  /* Временно для сетки */
- min-height: 748px;
- width: 480px;
+ width: 560px;
+ background: rgba(0, 128, 0, 0.2);
+ box-shadow: 0 0 0 3px green;
 }
 
 .contacts {
-  /* Временно для сетки */
- min-height: 748px;
  width: 560px;
+ background: rgba(0, 128, 0, 0.2);
+ box-shadow: 0 0 0 3px green;
+}
+
+.contacts p {
+  margin-bottom: 30px;
 }
 
 .main-footer {
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
-   /* Временно для сетки */
-  min-height: 323px;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
-
-.main-footer .footer-first-floor {
-  display: flex;
+.main-footer * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
 }
 
 .footer-first-floor {
+  display: flex;
   width: 1160px;
   margin-left: 140px;
   justify-content:space-between;
-
+  margin-bottom: 10px;
 }
 
 .main-footer-logo {
   margin: 0;
   width: 177px;
-  /* Временно для сетки */
-  min-height: 64px;
 }
 
 .user-navigation-footer {
   margin: 0;
-  width: 300px;
-  /* Временно для сетки */
-  min-height: 64px;
+  padding: 0;
+  margin-top: 2px;
+  width: 325px;
   display: flex;
-  justify-content: space-between;
 }
 
-.main-footer .footer-second-floor {
-  display: flex;
+.footer-login-link {
+  position: relative;
+  padding-left: 27px;
+}
+
+.footer-login {
+  width: 69px;
+  margin-right: 44px;
+}
+
+.footer-login-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/user-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-compare-link {
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer-compare {
+  width: 89px;
+  margin-right: 41px;
+}
+
+.footer-compare-link::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/compare-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-bag-link {
+  position: relative;
+  padding-left: 24px;
+}
+
+.footer-bag {
+  width: 82px;
+}
+
+.footer-bag-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/cart-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-login-link:hover::before,
+.footer-compare-link:hover::before,
+.footer-bag-link:hover::before {
+  opacity: 0.6;
+}
+
+.footer-login-link:focus::before,
+.footer-compare-link:focus::before,
+.footer-bag-link:focus::before {
+  opacity: 0.3;
 }
 
 .footer-second-floor {
+  display: flex;
   width: 1160px;
   margin-left: 140px;
+  display: flex;
   justify-content:space-between;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .footer-address {
   width: 220px;
-  /* Временно для сетки */
-  min-height: 32px;
- /* Тут на глаз маргин подобран, нужно исправить, и понять, почему при 160px уезжает навигация */
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .site-navigation-footer {
   width: 440px;
-  /* Временно для сетки */
   display: flex;
   justify-content: space-between;
   padding-left: 0;
@@ -685,23 +819,18 @@ legend:before {
 
 .footer-phone {
   width: 220px;
-  /* Временно для сетки */
-  min-height: 32px;
   display: flex;
   justify-content: flex-end;
-}
-
-.main-footer .footer-third-floor {
-  display: flex;
+  margin-top: 12px;
 }
 
 .footer-third-floor {
+  display: flex;
   width: 1160px;
   margin-left: 140px;
   justify-content: flex-end;
+  margin-top: 31px;
 }
-
-
 
 .social-icon {
   width: 160px;
@@ -712,11 +841,15 @@ legend:before {
   opacity: 0.3;
 }
 
-.social-icon:hover path {
+.social-icon-fb:hover path,
+.social-icon-ig:hover path,
+.social-icon-tw:hover path {
   opacity: 0.6;
 }
 
-.social-icon:focus path {
+.social-icon-fb:focus path,
+.social-icon-ig:focus path,
+.social-icon-tw:focus path {
   opacity: 0.1;
 }
 
@@ -755,22 +888,18 @@ legend:before {
   margin-right: auto;
 }
 
-
-
 .container-filter {
   width: 468px;
   height: 1287px;
   margin-right: auto;
   background-color: #efefef;
   display: flex;
-
 }
 
 .filters {
   margin: 0;
   padding: 0;
   width: 200px;
-  /* Временно для сетки */
   display: flex;
   padding-left: 200px;
   margin-top: 279px;
@@ -803,7 +932,6 @@ legend:before {
 
 .catalog-item {
   width: 360px;
-
   /* Временно для сетки */
   min-height: 485px;
   margin-bottom: 20px;
@@ -831,17 +959,8 @@ legend:before {
   list-style: none;
   width: 760px;
   justify-content: space-between;
-
   /* Временно для сетки */
   min-height: 70px;
-}
-
-.more-about-us {
-  padding-top: 50px;
-}
-
-.write-us-bottom {
-  padding-top: 50px;
 }
 
 .contacts p {
@@ -862,7 +981,6 @@ legend:before {
 
 .search-botton {
   display: none;
-  outline: none;
 }
 
 .search:focus {
@@ -887,22 +1005,61 @@ legend:before {
   background-color: #FFFFFF;
 }
 
-.menu-catalog {
-  display: none;
-}
 
-.menu-catalog > li {
-  position: relative;
+/*
+.menu-catalog li:nth-child(-n+3) {
   display: flex;
+  width: 200px;
+  padding-right:0px;
+  margin-bottom: 0px;
+  margin-right: 40px;
+}
+
+.menu-catalog li:nth-child(n+4):nth-child(-n+5) {
+  display: flex;
+  width: 160px;
+  padding-right:0px;
+  margin-bottom: 0px;
+  margin-right: 40px;
+}
+
+.menu-catalog li:nth-child(6) {
+  display: flex;
+  width: 160px;
+  padding-right:0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+*/
+
+.site-navigation > li {
+  position: relative;
+}
+
+.menu-catalog li {
+  width: 180px;
+}
+
+.site-navigation .menu-catalog {
+  position: absolute;
+
+  z-index: 10;
+  display: none;
+
+  width: 600px;
+  margin: 0px;
+  padding: 10px;
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 
-.site-navigation >li:hover .menu-catalog,
-.site-navigation >li:focus .menu-catalog {
+
+.site-catalog:hover .menu-catalog {
   display:flex;
-  width: 550px;
-  height: 130px;
-  flex-wrap: wrap;
+
   justify-content: space-between;
-  z-index: 10;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
