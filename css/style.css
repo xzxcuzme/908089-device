@@ -909,6 +909,29 @@ legend:before {
   padding: 0;
 }
 
+.breadcrumbs li {
+  position: relative;
+  margin-right: 39px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  background: url("../img/nav-arrow.svg");
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
 .page-title {
   width: 1040px;
   margin-left: auto;
