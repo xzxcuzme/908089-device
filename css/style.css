@@ -106,7 +106,8 @@ a {
 
 .header-link,
 .more-about-us,
-.write-us-bottom {
+.write-us-bottom,
+.filter-button {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -273,10 +274,10 @@ legend,
 }
 
 .filter-option {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 300;
   color: #000000;
   letter-spacing: 0.14px;
 }
@@ -308,73 +309,10 @@ legend:before {
   padding-left:0;
 }
 
-
-/* Разобраться с чек боксами, что бы они подсвечивались, а не текст
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #FFFFFF;
-}
-
-.filter-input:disabled + label {
-  color: #a6a6a6;
-}
-/*
-
-/* Сделать ховер карточки товара
-.catalog-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-*/
-
 .pagination-list {
   list-style: none;
 }
 
-/*.checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  margin: 10px 0 0 20px;
-}
-.checkbox + label {
-  position: relative;
-  padding: 0 0 0 60px;
-  cursor: pointer;
-}
-.checkbox + label:before {
-  content: '';
-  position: absolute;
-  top: -4px;
-  left: 0;
-  width: 50px;
-  height: 26px;
-  border-radius: 13px;
-  background: #CDD1DA;
-  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
-  transition: .2s;
-}
-.checkbox + label:after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: 2px;
-  width: 22px;
-  height: 22px;
-  border-radius: 10px;
-  background: #FFF;
-  box-shadow: 0 2px 5px rgba(0,0,0,.3);
-  transition: .2s;
-}
-.checkbox:checked + label:before {
-  background: #9FD468;
-}
-.checkbox:checked + label:after {
-  left: 26px;
-}
-.checkbox:focus + label:before {
-  box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
-}
-*/
 .main-header-logo {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
@@ -947,13 +885,68 @@ legend:before {
 }
 
 .filters {
-  margin: 0;
-  padding: 0;
   width: 200px;
-  display: flex;
   padding-left: 200px;
   margin-top: 279px;
   min-height: 1006px;
+}
+
+.filter legend {
+  margin-bottom: 30px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 0px;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.colour-filter .filter-option,
+.bluetooth-filter .filter-option {
+  margin-bottom: 25px;
+  padding-left: 40px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .colour-filter {
@@ -963,13 +956,85 @@ legend:before {
   min-height: 175px;
 }
 
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -40px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -40px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label {
+  opacity: 0.2; /* не работает */
+}
+
+.filter-input-radio:disabled + label {
+  opacity: 0.2; /* не работает */
+}
+
+.filter-button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  border: none;
+  width: 200px;
+  transition: all 0.1s linear;
+  position: relative;
+  font-size: 0px;
+}
+
+.filter-button::before  {
+  content: "";
+  position: absolute;
+  top:9px;
+  left: 0px;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
+.filter-button::after  {
+  content: "показать";
+  font-size: 18px;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+}
+
+.filter-button:hover  {
+  background-color: #f0c52e;
+   -webkit-transition: background-color 200ms linear;
+   -ms-transition: background-color 200ms linear;
+   transition: background-color 200ms linear;
+}
+
+.filter-button:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .catalog {
   width: 760px;
   min-height: 622px;
   margin-right: 140px;
   margin-top: 120px;
-
 }
 
 .catalog-columns {
