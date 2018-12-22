@@ -107,7 +107,8 @@ a {
 .header-link,
 .more-about-us,
 .write-us-bottom,
-.filter-button {
+.filter-button,
+.popup-link {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1030,6 +1031,54 @@ legend:before {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.popup-shower {
+  padding: 0;
+  margin: 0;
+}
+.popup-link {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  border: none;
+  width: 260px;
+  transition: all 0.1s linear;
+  position: relative;
+  font-size: 0px;
+}
+
+.popup-link::before  {
+  content: "";
+  position: absolute;
+  top:-9px;
+  left: -108px;
+  width: 260px;;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
+.popup-link::after  {
+  content: "напишите нам";
+  font-size: 18px;
+  position: absolute;
+  top: -17px;
+  left: -105px;
+  width: 260px;
+}
+
+.popup-link:hover  {
+  background-color: #f0c52e;
+  width: 260px;
+   -webkit-transition: background-color 200ms linear;
+   -ms-transition: background-color 200ms linear;
+   transition: background-color 200ms linear;
+}
+
+.popup-link:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog {
   width: 760px;
   min-height: 622px;
@@ -1049,7 +1098,7 @@ legend:before {
   width: 360px;
   /* Временно для сетки */
   min-height: 485px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-right: 40px;
 }
 
@@ -1157,10 +1206,8 @@ legend:before {
 
 .site-navigation .menu-catalog {
   position: absolute;
-
   z-index: 10;
   display: none;
-
   width: 600px;
   margin: 0px;
   padding: 10px;
@@ -1178,20 +1225,6 @@ legend:before {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-
-
-
-.link-button {
-  background: #f0c52e;
-  width: 260px;
-  min-height: 8px;
-  left: 0px;
-  top: 100px;
-  transform: scale(0.99);
-}
-
-
-
 
 .popup-checkbox,
 .popup {
@@ -1467,4 +1500,31 @@ legend:before {
 .footer-logout-catalog a:focus {
   color: #FFFFFF;
   opacity: 0.3;
+}
+
+.catalog * {
+  background: rgba(255, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 2px rgb(255, 0, 0);
+}
+
+.catalog-item-price {
+  display: flex;
+  width: 360px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+.catalog-category {
+  display: inline-block;
+  width: 260px;
+  margin-top: 0px;
+}
+
+.catalog-item-price b {
+  display: block;
+  margin-top: 18px;
 }
