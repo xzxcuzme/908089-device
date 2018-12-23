@@ -53,32 +53,6 @@ a {
   width: 315px;
 }
 
-
-
-
-/* Не работает ховер и фокус по поиску
-.search-string:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.search-string:focus {
-  color: rgba(0, 0, 0);
-  border:0px;
-}
-
-.search-botton {
-  visibility: hidden;
-}
-
-.search-botton:hover {
-  visibility: visible;
-}
-
-.search-botton:focus {
-  visibility: visible;
-}
-*/
-
 .search-botton {
   display: none;
   width: 85px;
@@ -372,8 +346,6 @@ legend:before {
   margin-left: 60px;
   margin-right: 60px;
   height: 50px;
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .container .search {
@@ -401,8 +373,6 @@ legend:before {
   margin-right: 60px;
   display: flex;
   flex-wrap: wrap;
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .site-navigation {
@@ -601,8 +571,6 @@ legend:before {
   text-align: center;
   margin-top: 63px;
   margin-bottom: 90px;
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 .write-us-bottom {
@@ -610,20 +578,14 @@ legend:before {
   text-align: center;
   margin-top: 71px;
   margin-bottom: 0px;
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 .about-us {
  width: 560px;
- background: rgba(0, 128, 0, 0.2);
- box-shadow: 0 0 0 3px green;
 }
 
 .contacts {
  width: 560px;
- background: rgba(0, 128, 0, 0.2);
- box-shadow: 0 0 0 3px green;
 }
 
 .contacts p {
@@ -638,10 +600,6 @@ legend:before {
   padding-bottom: 40px;
 }
 
-.main-footer * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
 
 .footer-first-floor {
   display: flex;
@@ -1035,6 +993,7 @@ legend:before {
   padding: 0;
   margin: 0;
 }
+
 .popup-link {
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -1048,32 +1007,48 @@ legend:before {
   font-size: 0px;
 }
 
-.popup-link::before  {
+.effect-4 label::before  {
   content: "";
   position: absolute;
-  top:-9px;
-  left: -108px;
-  width: 260px;;
+  top:0px;
+  left: -100px;
+  width: 259px;;
   height: 8px;
   background-color: #f0c52e;
 }
 
-.popup-link::after  {
+.effect-3 label::before  {
+  content: "";
+  position: absolute;
+  top:0px;
+  left: -95px;
+  width: 259px;;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
+.effect-4 label::after  {
   content: "напишите нам";
   font-size: 18px;
   position: absolute;
-  top: -17px;
+  top: -8px;
   left: -105px;
   width: 260px;
 }
 
-.popup-link:hover  {
-  background-color: #f0c52e;
+.effect-3 label::after  {
+  content: "подробнее о нас";
+  font-size: 18px;
+  position: absolute;
+  top: -8px;
+  left: -95px;
   width: 260px;
-   -webkit-transition: background-color 200ms linear;
-   -ms-transition: background-color 200ms linear;
-   transition: background-color 200ms linear;
 }
+
+.effect-3 label:focus .effect-3 label::after  {
+  opacity: 0.1;
+}
+
 
 .popup-link:focus {
   color: rgba(0, 0, 0, 0.3);
@@ -1183,20 +1158,32 @@ legend:before {
   display: none;
   width: 600px;
   margin: 0px;
-  padding: 10px;
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  padding: 24px;
+  left: -60px;
 }
 
 
 
 .site-catalog:hover .menu-catalog {
+  width: 1112px;
+  min-height: 129px;
   display:flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  list-style: none;
+  background-color: #f7e296;
+}
 
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
+.menu-catalog-first {
+  margin-right: 0px;
+}
+
+.menu-catalog-first li {
+
+}
+
+.menu-catalog li {
+  margin-bottom: 7px;
 }
 
 .popup-checkbox,
@@ -1238,6 +1225,21 @@ legend:before {
   padding-top: 95px;
 }
 
+.popup-content-map {
+  width: 960px;
+  height: 559px;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 600px;
+  padding: 0px;
+  opacity: 1;
+
+}
 
 .user-name-popup,
 .email-name-popup {
@@ -1333,7 +1335,11 @@ legend:before {
 .popup-shower:hover {
   color: #000000;
   text-decoration: none;
+}
 
+.popup-shower:focus {
+  color: #FFFFFF;
+  opacity: 0.1;
 }
 
 .popup-closer {
@@ -1346,6 +1352,7 @@ legend:before {
   background-image: url("../img/modal-close.svg");
   width: 55px;
   height: 55px;
+  opacity: 0.5;
 }
 
 .popup-closer:hover {
@@ -1353,11 +1360,10 @@ legend:before {
 }
 
 .popup-closer:focus {
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .popup-checkbox:checked + .popup {
-  opacity: 1;
   display: block;
 }
 
@@ -1561,11 +1567,6 @@ legend:before {
   opacity: 0.3;
 }
 
-.catalog * {
-  background: rgba(255, 0, 0, 0.3);
-  box-shadow: inset 0 0 0 2px rgb(255, 0, 0);
-}
-
 .catalog-item-price {
   display: flex;
   width: 360px;
@@ -1648,4 +1649,48 @@ textarea::-webkit-input-placeholder {
 
 input::-webkit-input-placeholder {
   padding-left: 20px;
+}
+
+.effect-4 {
+  margin: 0 0;
+  padding: 0 0;
+  width: 260px;
+}
+
+.effect-3 {
+  margin: 0 0;
+  padding: 0 0;
+  width: 260px;
+}
+
+.effect-4 label {
+  padding: 8px;
+  color: #000000;
+  width: 260px;
+ height: 20px;
+}
+
+.effect-3 label {
+  padding: 8px;
+  color: #000000;
+  width: 260px;
+ height: 20px;
+}
+
+.effect-4:hover {
+  background-color: #f0c52e;
+  width: 260px;
+  height: 30px;
+  left: 1px;
+}
+
+.effect-3:hover {
+  background-color: #f0c52e;
+  width: 260px;
+  height: 30px;
+  left: 1px;
+}
+
+.effect-4 label .popup-shower:focus {
+  opacity: 0.3;
 }
