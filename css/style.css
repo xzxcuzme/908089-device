@@ -1209,7 +1209,7 @@ legend:before {
 .popup-content {
   width: 960px;
   height: 553px;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 0px;
   bottom: 0;
@@ -1230,14 +1230,14 @@ legend:before {
 .popup-content-map {
   width: 960px;
   height: 559px;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 0px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: 600px;
+  margin-top: auto;
   padding: 0px;
 }
 
