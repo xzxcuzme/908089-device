@@ -284,10 +284,6 @@ legend:before {
   padding-left:0;
 }
 
-.pagination-list {
-  list-style: none;
-}
-
 .main-header-logo {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
@@ -1032,14 +1028,27 @@ legend:before {
 }
 
 .pagination-list {
-  padding: 0;
-  margin: 0;
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   width: 760px;
-  justify-content: space-between;
-  /* Временно для сетки */
-  min-height: 70px;
+  padding: 25px 0;
+  margin: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  background-color: #ebebeb;
+}
+
+.pagination-item:nth-child(3) {
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
 .contacts p {
@@ -1866,7 +1875,45 @@ input::-webkit-input-placeholder {
   display:block;
 }
 
-{
+ {
   background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.pagination-item-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 25px 30px;
+}
+
+.pagination-item-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 25px 30px;
+}
+
+.pagination-item a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.pagination-item a:hover {
+  opacity: 0.6;
+}
+
+.pagination-item a:focus {
+  opacity: 1;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  opacity: 1;
+}
+
+.pagination-item-back a,
+.pagination-item-next a {
+  color: #000000;
+  opacity: 1;
 }
