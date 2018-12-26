@@ -572,7 +572,8 @@ legend:before {
 }
 
 .contacts {
- width: 560px;
+  position: relative;
+  width: 560px;
 }
 
 .contacts p {
@@ -936,9 +937,9 @@ legend:before {
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
-  overflow: hidden;
   border: none;
   width: 200px;
+  height: 40px;
   transition: all 0.1s linear;
   position: relative;
   font-size: 0px;
@@ -947,7 +948,7 @@ legend:before {
 .filter-button::before  {
   content: "";
   position: absolute;
-  top:9px;
+  top:16px;
   left: 0px;
   width: 100%;
   height: 8px;
@@ -959,6 +960,7 @@ legend:before {
   font-size: 18px;
   position: absolute;
   left: 0px;
+  top:8px;
   width: 100%;
 }
 
@@ -990,6 +992,8 @@ legend:before {
   position: relative;
   font-size: 0px;
 }
+
+
 
 .effect-4 label::before  {
   content: "";
@@ -1033,10 +1037,6 @@ legend:before {
   opacity: 0.1;
 }
 
-
-.popup-link:focus {
-  color: rgba(0, 0, 0, 0.3);
-}
 
 .catalog {
   width: 760px;
@@ -1182,22 +1182,8 @@ legend:before {
   padding-right: 386px;
 }
 
-.popup-checkbox,
-.popup {
+.write-us-bottom {
   display: none;
-}
-
-
-
-.popup:before {
-  display: block;
-  content: ' ';
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 .popup-content {
@@ -1215,10 +1201,80 @@ legend:before {
   padding: 0px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: flex;
+  display: none;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 95px;
+}
+
+.index-columns * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.popup-button,
+.button-more {
+  position: relative;
+  width: 260px;
+  height: 40px;
+  background-color: rgba(240, 197, 46, 0);
+  border: none;
+  cursor:pointer;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 0px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+
+}
+
+.popup-button {
+  margin-top: 0px;
+}
+
+.popup-button::before,
+.button-more::before  {
+  content: "";
+  position: absolute;
+  top:16px;
+  left: 0px;
+  width: 260px;
+  height: 8px;
+  background-color: rgba(240, 197, 46, 1);;
+}
+
+.popup-button::after  {
+  content: "напишите нам";
+  font-size: 18px;
+  position: absolute;
+  left: 0px;
+  top:8px;
+  width: 100%;
+}
+
+.button-more::after {
+  content: "подробнее о нас";
+  font-size: 18px;
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 100%;
+}
+
+.popup-button:hover,
+.button-more:hover  {
+  background-color: rgba(240, 197, 46, 1);
+   -webkit-transition: background-color 200ms linear;
+   -ms-transition: background-color 200ms linear;
+   transition: background-color 200ms linear;
+}
+
+.popup-button:focus,
+.button-more:focus {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .popup-content-map {
@@ -1253,6 +1309,7 @@ legend:before {
 
 .write-us-send {
   width: 200px;
+
   align-items: center;
   align-self: center;
   margin-bottom: 70px;
@@ -1349,22 +1406,6 @@ legend:before {
 }
 
 
-.popup-shower {
-  color: #000000;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.popup-shower:hover {
-  color: #000000;
-  text-decoration: none;
-}
-
-.popup-shower:focus {
-  color: #FFFFFF;
-  opacity: 0.1;
-}
-
 .popup-closer {
   position: absolute;
   top: 22px;
@@ -1384,10 +1425,6 @@ legend:before {
 
 .popup-closer:focus {
   opacity: 0.3;
-}
-
-.popup-checkbox:checked + .popup {
-  display: block;
 }
 
 .user-navigation-catalog {
@@ -1615,6 +1652,7 @@ cursor:pointer;
 overflow: hidden;
 border: none;
 width: 200px;
+height: 40px;
 transition: all 0.1s linear;
 position: relative;
 font-size: 0px;
@@ -1630,7 +1668,7 @@ text-transform: uppercase;
 .write-us-send::before {
 content: "";
 position: absolute;
-top: 8px;
+top: 16px;
 left: 0px;
 width: 200px;;
 height: 8px;
@@ -1641,7 +1679,7 @@ background-color: #f0c52e;
 content: "отправить";
 font-size: 18px;
 position: absolute;
-top: 0px;
+top: 8px;
 left: 0px;
 width: 200px;
 }
@@ -1787,4 +1825,48 @@ input::-webkit-input-placeholder {
   opacity: 1;
   text-align: left;
   border: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: flex;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }

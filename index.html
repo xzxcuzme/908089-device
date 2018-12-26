@@ -78,54 +78,34 @@
        <li>Автотрейдинг</li>
        <li>ЖелДорЭкспедиция</li>
     </ul>
-    <section class="more-about-us">
-      <div class="popup-wrapper">
-        <input type="checkbox" class="popup-checkbox-map" id="popupCheckboxOne-map">
-        <div class="popup-map">
-          <div class="popup-content-map">
-            <label for="popupCheckboxOne-map" class="popup-closer">&#215;</label>
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
-          </div>
-        </div>
-      </div>
-      <div class="effect-3"><label for="popupCheckboxOne-map" class="popup-shower-map popup-link">подробнее о нас</label></div>
-    </section>
+    <button class="button-more">подробнее о нас</button>
   </section>
   <section class="contacts">
     <div class="line black"></div>
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
     <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
-    <section class="write-us-bottom">
-      <div class="popup-wrapper">
-        <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
-        <div class="popup">
-          <div class="popup-content">
-            <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
-            <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="user-name-popup">
-                <label class="name" for="user-name">Ваше имя:</label>
-                <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-              </div>
-              <div class="email-name-popup">
-                <label class="email" for="user-email">Ваш e-mail:</label>
-                <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
-              </div>
-              <div class="mail-name-popup">
-                <label class="mail" for="mail">Текст письма:</label>
-                <textarea id="mail" name="mail" placeholder="В свободной форме"></textarea>
-              </div>
-              <button class="write-us-send" type="submit">Отправить</button>
-            </form>
-          </div>
+    <button class="popup-button">напишите нам</button>
+    <section class="write-us-bottom popup-content">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="user-name-popup">
+          <label class="name" for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
         </div>
-      </div>
-      <div class="effect-4"><label for="popupCheckboxOne" class="popup-shower popup-link">напишите нам</label></div> <!--https://htmlacademy.ru/courses/71/run/22 https://htmlacademy.ru/courses/76/run/8  https://htmlacademy.ru/courses/84/run/14-->
+        <div class="email-name-popup">
+          <label class="email" for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+        </div>
+        <div class="mail-name-popup">
+          <label class="mail" for="mail">Текст письма:</label>
+          <textarea id="mail" name="mail" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="write-us-send" type="submit">Отправить</button>
+      </form>
+      <button for="popupCheckboxOne" class="popup-closer">&#215;</button>
     </section>
   </section>
   </div>
-
  </main>
 <footer class="main-footer">
   <div class="footer-first-floor">
@@ -164,5 +144,64 @@
      </p>
    </div>
  </footer>
+<script>
+  var link = document.querySelector(".popup-button");
+
+  var popup = document.querySelector(".popup-content");
+  var close = popup.querySelector(".popup-closer");
+
+  var form = popup.querySelector(".write-us-form");
+  var login = popup.querySelector("[name=user-name]");
+  var password = popup.querySelector("[name=user-email]");
+
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("user-name");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    if (storage) {
+      login.value = storage;
+      password.focus();
+    } else {
+      login.focus();
+    }
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !password.value) {
+       evt.preventDefault();
+       popup.classList.remove("modal-error");
+       popup.offsetWidth = popup.offsetWidth;
+       popup.classList.add("modal-error");
+     }  else {
+       if (isStorageSupport) {
+         localStorage.setItem("user-name", login.value);
+    }
+  }
+ });
+
+ window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
 </body>
 </html>
