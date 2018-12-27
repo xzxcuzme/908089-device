@@ -58,16 +58,35 @@
        <li><a href="#"><img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры"></a><span>Квадрокоптеры</span></li>
      </ul>
    </section>
-   <section class="services">
-    <ul class="services-menu">
-      <li>
-        <a href="#"><h2>Доставка</h2></a>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
+   <section class="slider">
+     <div class="slider-container">
+     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+     <div class="slider-controls">
+       <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+       <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+       <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+     </div>
+     <div class="black-line"></div>
+     <ul class="slider-list">
+       <li class="slider-item">
+         <h2>Доставка</h2>
+         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+         <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
+       </li>
+       <li class="slider-item">
+         <h2>Гарантия</h2>
+         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+         <img src="img/warranty.svg" width="136" height="164" alt="Гарантия">
+       </li>
+       <li class="slider-item">
+         <h2>Кредит</h2>
+         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+         <img src="img/credit.svg" width="136" height="164" alt="Кредит">
+       </li>
+     </ul>
+   </div>
   </section>
   <section class="brands">
     <ul class="brands-menu"> <!-- в ie11 выпили подержку filter, нужен svg, что бы работало как на макете -->
