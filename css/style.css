@@ -158,8 +158,7 @@ a {
 
 .write-us,
 .modal-map,
-.services,
-.brands {
+.services {
   display:none;
 }
 
@@ -197,7 +196,8 @@ h2,
 .ship li::before {
   content: "";
   background: url("../img/list-button.svg") no-repeat;
-
+  height: 8px;
+  width: 8px;
   padding-right: 26px;
 }
 
@@ -259,6 +259,8 @@ legend,
 
 .filter {
   background-color: #efefef;
+  width: 200px;
+  padding-left: 200px;
 }
 
 fieldset {
@@ -461,22 +463,23 @@ legend:before {
   background-position: 0 0;
 }
 
+.catalog-link {
+  width: auto;
+  position: relative;
+  padding-right: 0px;
+}
+
 .catalog-link::after {
   content: "";
   position: absolute;
   top: 4px;
-  right: -4px;
+  left: 230px;
   width: 16px;
   height: 16px;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
-}
-
-.site-navigation .catalog-link {
-  position: relative;
-  padding-right: 0px;
 }
 
 .login-link:hover::before,
@@ -728,7 +731,7 @@ legend:before {
 
 .yellow {
   position: relative;
-  right:420px;
+  right:451px;
   top: 28px;
   background: #ffc600;
 }
@@ -746,38 +749,45 @@ legend:before {
   justify-content: space-between;
   padding-left: 0;
   fill: #7e7e7e;
+}
+
+.social-icon-fb,
+.social-icon-ig,
+.social-icon-tw {
   opacity: 0.3;
 }
 
-.social-icon-fb:hover path,
-.social-icon-ig:hover path,
-.social-icon-tw:hover path {
+.social-icon-fb:hover,
+.social-icon-ig:hover,
+.social-icon-tw:hover {
   opacity: 0.6;
 }
 
-.social-icon-fb:focus path,
-.social-icon-ig:focus path,
-.social-icon-tw:focus path {
+.social-icon-fb:focus,
+.social-icon-ig:focus,
+.social-icon-tw:focus {
   opacity: 0.1;
 }
 
 .footer-copyright {
-  width: 60px;
   display: flex;
   justify-content: flex-end;
   margin-left: 440px;
+
 }
 
-.footer-copyright .button {
+.logo-htmlacademy {
+  content: "";
+  background: url("../img/logo-html.svg") no-repeat;
   width: 27px;
   height: 35px;
 }
 
-.footer-copyright .button:hover path {
+.logo-htmlacademy:hover {
   opacity: 0.6;
 }
 
-.footer-copyright .button:focus path {
+.logo-htmlacademy:focus {
   opacity: 0.3;
 }
 
@@ -788,6 +798,7 @@ legend:before {
   margin-right: auto;
   justify-content: flex-start;
   padding: 0;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs li {
@@ -828,10 +839,9 @@ legend:before {
 }
 
 .filters {
-  width: 200px;
-  padding-left: 200px;
+  width: 400px;
+  padding-left: 0px;
   margin-top: 0px;
-  min-height: 1006px;
 }
 
 .filter legend {
@@ -991,7 +1001,6 @@ legend:before {
 
 .catalog {
   width: 760px;
-  min-height: 622px;
   margin-right: 140px;
   margin-top: 120px;
 }
@@ -1035,7 +1044,6 @@ legend:before {
   list-style: none;
   width: 760px;
   padding: 25px 0;
-  margin: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1044,6 +1052,8 @@ legend:before {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   background-color: #ebebeb;
+  margin-top: -25px;
+  margin-bottom: -500px;
 }
 
 .pagination-item:nth-child(3) {
@@ -1409,8 +1419,8 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .login-link-catalog {
-  width: 160px;
-  margin-right:20px;
+  width: 170px;
+  margin-right:10px;
 }
 
 .user-navigation-catalog .login-link-header {
@@ -1659,6 +1669,32 @@ input::-webkit-input-placeholder {
   padding-left: 20px;
 }
 
+.sorting-div {
+  display: flex;
+  position: relative;
+}
+
+.filter-sorting {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  margin-bottom: 107px;
+  margin-top: 0px;
+  padding-left: 200px;
+  padding-right: 180px;
+  height: 70px;
+  text-align: center;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 88px 0 0;
+}
+
 .sorting {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -1668,8 +1704,111 @@ input::-webkit-input-placeholder {
   letter-spacing: 3.2px;
   text-transform: uppercase;
   margin-bottom: 107px;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-left: 73px;
+  padding-right: 54px;
+  height: 70px;
+  text-align: center;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.sorting-price,
+.sorting-type,
+.sorting-popular {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0px;
+  text-transform: none;
+  text-align: center;
+  padding-left:0px;
+  padding-right:0px;
+  height: 70px;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sorting-price {
+  flex: 60px 0 0;
+  padding-right: 29px;
+}
+
+.sorting-type {
+  flex: 53px 0 0;
+  padding-right: 31px;
+}
+
+.sorting-popular {
+  flex: 118px 0 0;
+  padding-right: 13px;
+}
+
+.sorting-padding {
+  height: 70px;
+  background-color: #ebebeb;
+  flex: 200px 0 0;
+}
+
+.sorting-button {
+  height: 70px;
+  background-color: #ebebeb;
+  flex: 196px 0 0;
+  position: relative;
+}
+
+.sort-button-up {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-up-dir.svg") no-repeat;
+  height: 10px;
+  width: 11px;
+  left: 19px;
+  top: 30px;
+  opacity: 0.2;
+}
+
+.sort-button-down {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-down-dir.svg") no-repeat;
+  height: 10px;
+  width: 11px;
+  left: 49px;
+  top: 30px;
+  opacity: 0.2;
+}
+
+.sort-button-up:hover,
+.sort-button-down:hover {
+  opacity: 0.4;
+}
+
+.sort-button-up:focus,
+.sort-button-down:focus {
+  opacity: 1;
+}
+
+
+.sorting-price:hover,
+.sorting-type:hover,
+.sorting-popular:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-price:focus,
+.sorting-type:focus,
+.sorting-popular:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+
 
 .range-filter {
   width: 200px;
@@ -1690,7 +1829,6 @@ input::-webkit-input-placeholder {
 .range-controls .bar {
   width: 110px;
   height: 2px;
-
   background: #91c92f;
 }
 
@@ -1875,9 +2013,9 @@ input::-webkit-input-placeholder {
   display:block;
 }
 
- {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+main *{
+  background: rgba(200, 50, 100, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(200, 50, 100);
 }
 
 .pagination-item-back {
