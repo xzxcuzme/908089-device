@@ -2013,11 +2013,6 @@ input::-webkit-input-placeholder {
   display:block;
 }
 
-main *{
-  background: rgba(200, 50, 100, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(200, 50, 100);
-}
-
 .pagination-item-back {
   position: absolute;
   left: 0;
@@ -2054,4 +2049,87 @@ main *{
 .pagination-item-next a {
   color: #000000;
   opacity: 1;
+}
+
+.brands {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brands-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 93px 0;
+  margin: 0 0;
+}
+
+.brands-menu img {
+  opacity: 0.2;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  filter: gray;
+}
+
+.brands-menu img:hover {
+  -webkit-filter: none;
+  filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.index-catalog {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0;
+  margin: 0 0;
+}
+
+.index-menu a {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 197, 46, 0.5);
+  margin-bottom: 38px;
+}
+
+.index-menu li {
+  width: 160px;
+  height: 276px;
+}
+
+.index-menu span {
+  width: 160px;
+  height: 78px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.18px;
+}
+
+.index-menu a:hover {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.index-menu a:focus img,
+.index-menu a:focus + span {
+  opacity: 0.3;
+}
+
+ {
+  background: rgba(255, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(255, 0, 0);
 }
