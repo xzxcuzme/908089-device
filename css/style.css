@@ -1921,6 +1921,7 @@ input::-webkit-input-placeholder {
   background-color: #e5e5e5;
   display: flex;
   flex-wrap: wrap;
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .slider h2 {
@@ -1974,6 +1975,7 @@ input::-webkit-input-placeholder {
 
 .slider-controls-item {
   margin-bottom: 24px;
+  color: #000;
 }
 
 .slider-controls .active::before {
@@ -1997,7 +1999,6 @@ input::-webkit-input-placeholder {
   width: 160px;
   height: 18px;
   text-align: center;
-  font-size: 0;
   transform: translateX(-50%);
 }
 
@@ -2017,63 +2018,19 @@ input::-webkit-input-placeholder {
 .item-2:checked ~ .slider-controls .slider-controls-item--2::before,
 .item-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: '';
-  color: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 40px;
-  width: 280px;
-  z-index: 2;
-  background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 280px;
+    background-color: black;
 }
 
-.item-1:checked ~ .slider-controls .slider-controls-item--1::after {
-  content: 'Доставка';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  height: 40px;
-  width: 160px;
-  z-index: 2;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #f0c52e;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-.item-2:checked ~ .slider-controls .slider-controls-item--2::after {
-  content: 'Гарантия';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  height: 40px;
-  width: 160px;
-  z-index: 2;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #f0c52e;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-.item-3:checked ~ .slider-controls .slider-controls-item--3::after {
-  content: 'Кредит';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  height: 40px;
-  width: 160px;
-  z-index: 2;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #f0c52e;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
+.item-1:checked ~ .slider-controls .slider-controls-item--1,
+.item-2:checked ~ .slider-controls .slider-controls-item--2,
+.item-3:checked ~ .slider-controls .slider-controls-item--3 {
+  color: white;
 }
 
 .slider-controls label {
@@ -2082,19 +2039,15 @@ input::-webkit-input-placeholder {
   left: 100px;
   width: 160px;
   height: 40px;
-  padding: 0px;
+  padding-top: 8px;
   cursor: pointer;
-  font-size: 0px;
-}
 
-.slider-controls label::after {
-  position: absolute;
-  left: 0px;
-  width: 160px;
-  height: 8px;
-  padding: 0px;
-  cursor: pointer;
-  color: #f0c52e;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 }
 
 .slider-item img {
@@ -2116,84 +2069,7 @@ input::-webkit-input-placeholder {
   top: 16px;
   left: 0px;
   background-color: #f0c52e;
-}
-
-.slider-controls .slider-controls-item--1::after {
-  position: absolute;
-  top: 8px;
-  content: 'доставка';
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-
-.slider-controls .slider-controls-item--1:hover::after {
-  position: absolute;
-  top: 8px;
-  content: 'доставка';
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-
-.slider-controls .slider-controls-item--2::after {
-  position: absolute;
-  top: 8px;
-  content: 'гарантия';
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-
-.slider-controls .slider-controls-item--2:hover::after {
-  position: absolute;
-  top: 8px;
-  content: 'гарантия';
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-
-.slider-controls .slider-controls-item--3::after {
-  position: absolute;
-  top: 8px;
-  content: 'кредит';
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-
-.slider-controls .slider-controls-item--3:hover::after {
-  position: absolute;
-  top: 8px;
-  content: 'кредит';
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
+  z-index: -1;
 }
 
 .slider-controls-item:hover::before {
@@ -2378,12 +2254,6 @@ input::-webkit-input-placeholder {
   top: 440px;
   right: 130px;
 }
-
-
-
-
-
-
 
 .header-slider-item h3 {
   position: absolute;
