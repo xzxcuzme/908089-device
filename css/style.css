@@ -1975,7 +1975,6 @@ input::-webkit-input-placeholder {
 
 .slider-controls-item {
   margin-bottom: 24px;
-  color: #000;
   transition: all 1s linear;
 }
 
@@ -2019,7 +2018,6 @@ input::-webkit-input-placeholder {
 .item-2:checked ~ .slider-controls .slider-controls-item--2::before,
 .item-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: '';
-  color: white;
   position: absolute;
   left: 0;
   top: 0;
@@ -2031,7 +2029,7 @@ input::-webkit-input-placeholder {
 .item-1:checked ~ .slider-controls .slider-controls-item--1,
 .item-2:checked ~ .slider-controls .slider-controls-item--2,
 .item-3:checked ~ .slider-controls .slider-controls-item--3 {
-  color: white;
+  color: #f7e184;
 }
 
 .slider-controls label {
