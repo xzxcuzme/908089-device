@@ -1976,6 +1976,7 @@ input::-webkit-input-placeholder {
 .slider-controls-item {
   margin-bottom: 24px;
   color: #000;
+  transition: all 1s linear;
 }
 
 .slider-controls .active::before {
@@ -2018,13 +2019,13 @@ input::-webkit-input-placeholder {
 .item-2:checked ~ .slider-controls .slider-controls-item--2::before,
 .item-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: '';
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 40px;
-    width: 280px;
-    background-color: black;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 280px;
+  background-color: black;
 }
 
 .item-1:checked ~ .slider-controls .slider-controls-item--1,
@@ -2041,7 +2042,6 @@ input::-webkit-input-placeholder {
   height: 40px;
   padding-top: 8px;
   cursor: pointer;
-
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -2069,6 +2069,7 @@ input::-webkit-input-placeholder {
   top: 16px;
   left: 0px;
   background-color: #f0c52e;
+  transition: all 0.1s linear;
   z-index: -1;
 }
 
@@ -2080,6 +2081,9 @@ input::-webkit-input-placeholder {
   top: 0px;
   left: 0px;
   background-color: #f0c52e;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 .header-slider {
@@ -2300,6 +2304,7 @@ input::-webkit-input-placeholder {
 .button-more {
   width: 260px;
   margin-top: 38px;
+    transition: all 0.1s linear;
 }
 
 .popup-button {
@@ -2341,9 +2346,15 @@ input::-webkit-input-placeholder {
   height: 8px;
   background-color: #f0c52e;
   z-index: -1;
+  transition: all 0.1s linear;
 }
 
-.button:hover {
+.button:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
   background-color: #f0c52e;
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
