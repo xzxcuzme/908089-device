@@ -2496,6 +2496,7 @@ input::-webkit-input-placeholder {
   padding: 6px;
   background: url("../img/slider-button-empty.svg") no-repeat;
   cursor: pointer;
+  transform: scale(0.5);
 }
 
 .header-slider-list {
@@ -2551,6 +2552,7 @@ input::-webkit-input-placeholder {
   height: 12px;
   padding: 6px;
   background-color: inherit;
+
 }
 
 .self {
