@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Интернет-магазин: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -74,7 +74,7 @@
           <fieldset class="filter-item">
             <legend>Стоимость</legend>
             <div class="range-filter">
-              <div class="range-filter">
+
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
@@ -87,45 +87,45 @@
                   <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
                 </div>
               </div>
-          </fieldset>
-          <fieldset class="colour-filter">
-            <legend>Цвет</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
-                <label for="black">Черный</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
-                <label for="white">Белый</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
-                <label for="blue">Синий</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
-                <label for="red">Красный</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
-                <label for="pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="bluetooth-filter">
-            <legend>Bluetooth</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="true" id="filter-true" checked>
-                <label for="filter-true">Есть</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="false" id="filter-false" >
-                <label for="filter-false">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
+            </fieldset>
+            <fieldset class="colour-filter">
+              <legend>Цвет</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="bluetooth-filter">
+              <legend>Bluetooth</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="true" id="filter-true" checked>
+                  <label for="filter-true">Есть</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="false" id="filter-false" >
+                  <label for="filter-false">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
           <button type="submit" class="button show-width">Показать</button>
         </form>
       </section>
@@ -136,7 +136,7 @@
         <li class="catalog-item">
           <div class="actions">
             <button class="button buy-width">В корзину</button>
-            <button class="add-to-copmare" href="#">Добавить к сравнению</button>
+            <button class="add-to-copmare">Добавить к сравнению</button>
           </div>
           <a href="catalog-item.html">
             <img class="catalog-item-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -151,7 +151,7 @@
         <li class="catalog-item">
           <div class="actions">
             <button class="button buy-width">В корзину</button>
-            <button class="add-to-copmare" href="#">Добавить к сравнению</button>
+            <button class="add-to-copmare">Добавить к сравнению</button>
           </div>
           <a href="catalog-item.html">
             <img class="catalog-item-image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -166,7 +166,7 @@
         <li class="catalog-item">
           <div class="actions">
             <button class="button buy-width">В корзину</button>
-            <button class="add-to-copmare" href="#">Добавить к сравнению</button>
+            <button class="add-to-copmare">Добавить к сравнению</button>
           </div>
           <a href="catalog-item.html">
             <img class="catalog-item-image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -181,7 +181,7 @@
         <li class="catalog-item">
           <div class="actions">
             <button class="button buy-width">В корзину</button>
-            <button class="add-to-copmare" href="#">Добавить к сравнению</button>
+            <button class="add-to-copmare">Добавить к сравнению</button>
           </div>
           <a href="catalog-item.html">
             <img class="catalog-item-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
