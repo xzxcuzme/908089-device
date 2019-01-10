@@ -1156,12 +1156,12 @@ legend:before {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   display: none;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 95px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 .modal-map {
@@ -1177,11 +1177,10 @@ legend:before {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   display: none;
   box-shadow: 0 10px 10px 5px rgba(0,0,0,0.2);
-
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 .user-name-popup {
@@ -1858,15 +1857,15 @@ legend:before {
 .brands-menu img {
   opacity: 0.2;
   -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  filter: gray;
+          filter: grayscale(1);
+          filter: gray;
 }
 
 .brands-menu img:hover {
-  -webkit-filter: none;
-  filter: none;
-  filter: none;
   opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+          filter: none;
 }
 
 .index-catalog {
@@ -2089,8 +2088,8 @@ legend:before {
   left: 0;
   background-color: #f0c52e;
   -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
+      -ms-transition: background-color 200ms linear;
+          transition: background-color 200ms linear;
 }
 
 .header-slider {
@@ -2367,8 +2366,8 @@ legend:before {
   height: 40px;
   background-color: #f0c52e;
   -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
+      -ms-transition: background-color 200ms linear;
+          transition: background-color 200ms linear;
 }
 
 .button:focus {
