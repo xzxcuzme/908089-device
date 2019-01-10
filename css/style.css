@@ -1799,7 +1799,8 @@ a {
 
 .catalog-item .actions{
   display:none;
-  }
+}
+
 .catalog-item:hover .actions{
   display:block;
 }
@@ -1809,6 +1810,15 @@ a {
   left: 0;
   top: 0;
   padding: 25px 30px;
+  color: black;
+}
+
+.pagination-item-back:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-item-back:focus {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-item-next {
@@ -1816,6 +1826,15 @@ a {
   right: 0;
   top: 0;
   padding: 25px 30px;
+  color: black;
+}
+
+.pagination-item-next:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-item-next:focus {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-item a {
