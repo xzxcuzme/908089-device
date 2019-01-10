@@ -81,7 +81,6 @@ a {
 .header-link,
 .more-about-us,
 .write-us-bottom,
-
 .popup-link {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -559,11 +558,32 @@ legend:before {
 
 .about-us {
  width: 560px;
+ position: relative;
+}
+
+.about-us::after {
+  content: '';
+  width: 80px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .contacts {
   position: relative;
   width: 560px;
+}
+
+.contacts::after {
+  content: '';
+  width: 80px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .contacts p {
@@ -1929,7 +1949,8 @@ input::-webkit-input-placeholder {
   margin-top: -28px;
 }
 
-.black-line {
+.slider-list::after {
+  content: '';
   width: 7px;
   height: 319px;
   background-color: black;
@@ -2137,7 +2158,7 @@ input::-webkit-input-placeholder {
   margin: 0;
   position: absolute;
   max-height: 122px;
-  right: 45px;
+  left: 600px;
   top: 97px;
   z-index: 10;
 }
@@ -2215,7 +2236,7 @@ input::-webkit-input-placeholder {
   color: #FFFFFF;
   letter-spacing: 1.8px;
   position: absolute;
-  right:0px;
+  right:0;
   top: 0;
   margin-right: 145px;
 }
@@ -2238,7 +2259,7 @@ input::-webkit-input-placeholder {
   max-width: 425px;
   position: absolute;
   top: 372px;
-  right: 130px;
+  left: 600px;
 }
 
 .specifications-name p {
@@ -2259,23 +2280,25 @@ input::-webkit-input-placeholder {
   max-width: 425px;
   position: absolute;
   top: 440px;
-  right: 130px;
+  left: 600px;
 }
 
 .header-slider-item .description {
   max-height: 70px;
   max-width: 481px;
   position: absolute;
-  right: 74px;
+  left: 600px;
   top: 225px;
 }
 
-.white-line {
+.header-slider::before {
+  content: '';
   width: 100px;
   height: 7px;
   background-color: white;
   position: absolute;
-  right: 460px;
+  left: 600px;
+  top: 0;
 }
 
 .show-width {
@@ -2294,7 +2317,7 @@ input::-webkit-input-placeholder {
   width: 220px;
   height: 100%;
   position: absolute;
-  left: 605px;
+  left: 600px;
   top: 332px;
   padding-top: 8px;
 }
