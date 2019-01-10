@@ -1099,7 +1099,6 @@ legend:before {
   margin-left: 35px;
   margin-right: 0;
   height: 30px;
-
 }
 
 .menu-catalog li:nth-child(2),
@@ -1112,7 +1111,6 @@ legend:before {
   width: 130px;
   height: 30px;
 }
-
 
 .menu-catalog {
   position: absolute;
@@ -1129,8 +1127,6 @@ legend:before {
   margin-left: 35px;
   padding-right: 35px;
 }
-
-
 
 .site-catalog:hover .menu-catalog {
   width: 750px;
@@ -1198,16 +1194,13 @@ legend:before {
   width: 360px;
   padding: 0;
   margin: 0;
-  justify-content: flex-end;
 }
 
 .mail-name-popup {
   width: 760px;
   margin-top: 15px;
   margin-bottom: 15px;
-
 }
-
 
 .name,
 .email,
@@ -1227,10 +1220,6 @@ legend:before {
   padding-bottom: 10px;
 }
 
-.email-name-popup {
-  width: 360px;
-}
-
 .write-us-form {
   width: 960px;
   display: flex;
@@ -1246,11 +1235,11 @@ legend:before {
   color: #464646;
   letter-spacing: 0;
   text-transform: none;
-  width: 360px;
+  width: 340px;
   height: 50px;
   border-style: none;
   background-color: #f2f2f2;
-
+  padding-left: 20px;
 }
 
 .popup-content textarea {
@@ -1261,14 +1250,14 @@ legend:before {
   color: #464646;
   letter-spacing: 0;
   text-transform: none;
-  width: 760px;
+  width: 740px;
   height: 156px;
   border-style: none;
   background-color: #f2f2f2;
   padding: 0;
-
+  padding-left: 20px;
+  padding-top: 20px;
 }
-
 
 .popup-closer {
   position: absolute;
@@ -1510,14 +1499,6 @@ legend:before {
   margin-top: 18px;
 }
 
-textarea::-webkit-input-placeholder {
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
-input::-webkit-input-placeholder {
-  padding-left: 20px;
-}
 
 .sorting-div {
   display: flex;
