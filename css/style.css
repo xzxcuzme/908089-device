@@ -161,7 +161,9 @@ a {
 }
 
 
-h2,
+.slider-item h2,
+.about-us h2,
+.contacts h2,
 .page-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
@@ -227,7 +229,7 @@ h2,
   color: rgba(0, 0, 0, 0.1);
 }
 
-legend,
+.filter legend,
 .catalog-category {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -261,15 +263,15 @@ legend,
   padding-left: 200px;
 }
 
-fieldset {
+.filter fieldset {
   border: none;
 }
 
-legend {
+.filter legend {
   position:relative;
 }
 
-legend:before {
+.filter legend:before {
   position:absolute;
   top:-12px;
   left:0;
