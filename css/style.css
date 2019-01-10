@@ -1608,7 +1608,7 @@ input::-webkit-input-placeholder {
   width: 11px;
   left: 49px;
   top: 30px;
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .sort-button-up:hover,
