@@ -2133,8 +2133,13 @@ input::-webkit-input-placeholder {
   font-weight: 700;
   color: #000000;
   letter-spacing: 0.47px;
-  max-width: 501px;
+  width: 510px;
   margin: 0;
+  position: absolute;
+  max-height: 122px;
+  right: 45px;
+  top: 97px;
+  z-index: 10;
 }
 
 .item-one:checked ~ .header-slider-list .header-slider-item:nth-child(1) {
@@ -2257,15 +2262,6 @@ input::-webkit-input-placeholder {
   right: 130px;
 }
 
-.header-slider-item h3 {
-  position: absolute;
-  max-height: 122px;
-  width: 501px;
-  right: 54px;
-  top: 97px;
-  z-index: 10;
-}
-
 .header-slider-item .description {
   max-height: 70px;
   max-width: 481px;
@@ -2306,7 +2302,7 @@ input::-webkit-input-placeholder {
 .button-more {
   width: 260px;
   margin-top: 38px;
-    transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .popup-button {
