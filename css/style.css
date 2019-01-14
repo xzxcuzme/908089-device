@@ -57,7 +57,6 @@ a {
   height: 50px;
 }
 
-
 .main-header {
   background-color: #f7e296;
   width: 1160px;
@@ -158,7 +157,6 @@ a {
   display:none;
 }
 
-
 .slider-item h2,
 .about-us h2,
 .contacts h2,
@@ -189,14 +187,15 @@ a {
   color: #000000;
   letter-spacing: 0;
   list-style: none;
+  padding: 0 0;
 }
 
 .ship li::before {
-  content: "";
+  content: '';
   background: url("../img/list-button.svg") no-repeat;
   height: 8px;
   width: 8px;
-  padding-right: 26px;
+  padding-right: 35px;
 }
 
 .site-navigation-footer {
@@ -295,8 +294,8 @@ a {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  left: 57px;
-  top: -23px;
+  left: 58px;
+  top: -24px;
 }
 
 .main-header-logo:hover {
@@ -335,11 +334,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding-top: 0;
-  margin-top: 4px;
+  margin-top: -15px;
   width: 1040px;
   margin-left: 60px;
   margin-right: 60px;
-  height: 50px;
 }
 
 .container .search {
@@ -410,8 +408,8 @@ a {
 
 .compare-link-index {
   width: 100px;
-  margin-right:40px;
-  margin-left:180px;
+  margin-right: 40px;
+  margin-left: 200px;
 }
 
 .login-link-index {
@@ -504,17 +502,17 @@ a {
 
 .site-ship {
   margin-left: 300px;
-  width:120px;
+  width: 120px;
 }
 
 .site-guarantee {
   margin-left: 40px;
-  width:120px;
+  width: 120px;
 }
 
 .site-contacts {
   margin-left: 100px;
-  width:120px;
+  width: 120px;
 }
 
 .index-columns {
@@ -529,18 +527,18 @@ a {
 
 .index-columns h2 {
   margin: 0;
-  margin-top: 45px;
-  margin-bottom: 42px;
+  margin-top: 52px;
+  margin-bottom: 44px;
 }
 
 .about-us p {
   margin: 0;
-  margin-bottom: 67px;
+  margin-bottom: 30px;
   width: 475px;
 }
 
 .about-us p:nth-child(3) {
-  margin-bottom: 30px;
+  margin-bottom: 65px;
 }
 
 .more-about-us {
@@ -717,7 +715,7 @@ a {
 .site-navigation-footer {
   width: 440px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 0;
 }
 
@@ -741,7 +739,7 @@ a {
   content: '';
   position: absolute;
   left: 0;
-  top: 32px;
+  top: 29px;
   width: 80px;
   height: 7px;
   background-color: #ffc600;
@@ -945,16 +943,12 @@ a {
 }
 
 .filter-input-checkbox:disabled + label {
-  opacity: 0.2; /* не работает */
+  opacity: 0.2;
 }
 
 .filter-input-radio:disabled + label {
-  opacity: 0.2; /* не работает */
+  opacity: 0.2;
 }
-
-
-
-
 
 .popup-shower {
   padding: 0;
@@ -991,8 +985,6 @@ a {
 .catalog-item {
   position:relative;
   width: 360px;
-  /* Временно для сетки */
-  min-height: 485px;
   margin-bottom: 0;
   margin-right: 40px;
 }
@@ -1131,7 +1123,7 @@ a {
 
 .site-catalog:hover .menu-catalog {
   width: 750px;
-  min-height: 129px;
+  min-height: 114px;
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -1870,8 +1862,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 93px 0;
-  margin: 0 0;
+  padding: 0 0;
+  margin-top: 93px;
+  margin-bottom: 86px;
 }
 
 .brands-menu img {
@@ -1892,14 +1885,14 @@ a {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 146px;
+  margin-bottom: 170px;
 }
 
 .index-menu {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 0;
   margin: 0 0;
 }
@@ -1911,17 +1904,15 @@ a {
   justify-content: center;
   align-items: center;
   background-color: rgba(240, 197, 46, 0.5);
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .index-menu li {
   width: 160px;
-  height: 276px;
 }
 
 .index-menu span {
   width: 160px;
-  height: 78px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1941,7 +1932,7 @@ a {
 
 .slider {
   position: relative;
-  width: 1445px;
+  width: 1440px;
   margin-left: auto;
   margin-right: auto;
   background-color: #e5e5e5;
@@ -1982,6 +1973,7 @@ a {
 .slider-item {
   display: none;
   margin-bottom: 140px;
+  position: relative;
 }
 
 .slider-container {
@@ -2001,7 +1993,7 @@ a {
 }
 
 .slider-controls-item {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   transition: all 1s linear;
 }
 
@@ -2079,6 +2071,9 @@ a {
 .slider-item img {
   width: 136px;
   height: 164px;
+  position: absolute;
+  right: 5px;
+  top: 16px;
 }
 
 .slider-button {
@@ -2115,21 +2110,21 @@ a {
 .header-slider {
   position: relative;
   width: 1160px;
-  height: 610px;
+  height: 594px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .header-slider-controls {
   position: absolute;
-  right: 80px;
-  top: 332px;
-  z-index: 100;
+  right: 78px;
+  top: 318px;
+  z-index: 10;
   width: 80px;
   text-align: center;
   font-size: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header-slider-controls label {
@@ -2138,7 +2133,7 @@ a {
   vertical-align: middle;
   width: 12px;
   height: 12px;
-  padding: 6px;
+  padding: 16px;
   background: url("../img/slider-button-empty.svg") no-repeat;
   cursor: pointer;
   transform: scale(0.5);
@@ -2166,8 +2161,8 @@ a {
   margin: 0;
   position: absolute;
   max-height: 122px;
-  left: 600px;
-  top: 97px;
+  left: 602px;
+  top: 82px;
   z-index: 10;
 }
 
@@ -2202,7 +2197,6 @@ a {
   height: 12px;
   padding: 6px;
   background-color: inherit;
-
 }
 
 .self {
@@ -2225,7 +2219,7 @@ a {
 
 .header-container {
   width: 1160px;
-  height: 129px;
+  height: 114px;
   background-color: #f7e296;
 
 }
@@ -2244,9 +2238,8 @@ a {
   color: #FFFFFF;
   letter-spacing: 1.8px;
   position: absolute;
-  right:0;
-  top: 0;
-  margin-right: 145px;
+  right: 20px;
+  top: -10px;
 }
 
 .specifications p {
@@ -2256,15 +2249,13 @@ a {
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.36px;
-
 }
 
 .specifications {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-height: 40px;
-  max-width: 425px;
+  max-width: 450px;
   position: absolute;
   top: 372px;
   left: 600px;
@@ -2277,17 +2268,15 @@ a {
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.13px;
-
 }
 
 .specifications-name {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-height: 40px;
-  max-width: 425px;
+  max-width: 450px;
   position: absolute;
-  top: 440px;
+  top: 447px;
   left: 600px;
 }
 
@@ -2296,7 +2285,7 @@ a {
   max-width: 481px;
   position: absolute;
   left: 600px;
-  top: 225px;
+  top: 198px;
 }
 
 .header-slider::before {
@@ -2306,7 +2295,7 @@ a {
   background-color: white;
   position: absolute;
   left: 600px;
-  top: 0;
+  top: 40px;
 }
 
 .show-width {
@@ -2326,7 +2315,7 @@ a {
   height: 100%;
   position: absolute;
   left: 600px;
-  top: 332px;
+  top: 316px;
   padding-top: 8px;
 }
 
@@ -2338,7 +2327,7 @@ a {
 
 .popup-button {
   width: 260px;
-  margin-top: 62px;
+  margin-top: 60px;
   margin-bottom: 82px;
 }
 
@@ -2392,4 +2381,13 @@ a {
 
 .button:focus {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.monopod {
+  margin-top: 43px;
+}
+
+* {
+  background: rgba(234, 255, 45, 0.2);
+box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
