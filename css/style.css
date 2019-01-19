@@ -1515,13 +1515,24 @@ a {
   letter-spacing: 3.2px;
   text-transform: uppercase;
   margin-top: 0;
+  padding-left: 25px;
   height: 70px;
   text-align: center;
-  background-color: #dcdcdc;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 468px;
+  min-width: 443px;
+  background-color: #dcdcdc;
+}
+
+.filter-sorting::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 400px;
+  height: 70px;
+  min-width: 68px;
+  background-color: #dcdcdc;
 }
 
 .sorting {
@@ -1534,7 +1545,8 @@ a {
   text-transform: uppercase;
   margin-bottom: 107px;
   margin-top: 0;
-  min-width: 272px;
+  padding-left: 20px;
+  min-width: 252px;
   height: 70px;
   text-align: center;
   background-color: #ebebeb;
@@ -1565,10 +1577,13 @@ a {
 
 .sorting-price {
   min-width: 80px;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
 }
 
 .sorting-type {
   min-width: 80px;
+  text-align: left;
 }
 
 .sorting-popular {
@@ -2394,10 +2409,4 @@ a {
 
 .monopod {
   margin-top: 43px;
-}
-
-* {
-
-background: rgba(234, 255, 45, 0.2);
-box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
