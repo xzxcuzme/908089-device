@@ -1159,8 +1159,10 @@ a {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 95px;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .modal-map {
@@ -1178,8 +1180,10 @@ a {
   padding: 0;
   display: none;
   box-shadow: 0 10px 10px 5px rgba(0,0,0,0.2);
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .user-name-popup {
@@ -1874,6 +1878,11 @@ a {
 .brands-menu img {
   opacity: 0.2;
   -webkit-filter: grayscale(1);
+  -webkit-filter: gray;
+     -moz-filter: grayscale(1);
+     -moz-filter: gray;
+      -ms-filter: grayscale(1);
+      -ms-filter: gray;
           filter: grayscale(1);
           filter: gray;
 }
@@ -1881,7 +1890,8 @@ a {
 .brands-menu img:hover {
   opacity: 1;
   -webkit-filter: none;
-          filter: none;
+     -moz-filter: none;
+      -ms-filter: none;
           filter: none;
 }
 
@@ -2107,6 +2117,7 @@ a {
   left: 0;
   background-color: #f0c52e;
   -webkit-transition: background-color 200ms linear;
+     -moz-transition: background-color 200ms linear;
       -ms-transition: background-color 200ms linear;
           transition: background-color 200ms linear;
 }
@@ -2379,6 +2390,7 @@ a {
   height: 40px;
   background-color: #f0c52e;
   -webkit-transition: background-color 200ms linear;
+     -moz-transition: background-color 200ms linear;
       -ms-transition: background-color 200ms linear;
           transition: background-color 200ms linear;
 }
