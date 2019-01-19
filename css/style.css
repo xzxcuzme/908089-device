@@ -1515,15 +1515,13 @@ a {
   letter-spacing: 3.2px;
   text-transform: uppercase;
   margin-top: 0;
-  padding-left: 200px;
-  padding-right: 180px;
   height: 70px;
   text-align: center;
   background-color: #dcdcdc;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 88px 0 0;
+  min-width: 468px;
 }
 
 .sorting {
@@ -1536,8 +1534,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 107px;
   margin-top: 0;
-  padding-left: 73px;
-  padding-right: 54px;
+  min-width: 272px;
   height: 70px;
   text-align: center;
   background-color: #ebebeb;
@@ -1557,8 +1554,8 @@ a {
   letter-spacing: 0;
   text-transform: none;
   text-align: center;
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0;
+  padding-right: 0;
   height: 70px;
   background-color: #ebebeb;
   display: flex;
@@ -1567,24 +1564,21 @@ a {
 }
 
 .sorting-price {
-  flex: 60px 0 0;
-  padding-right: 29px;
+  min-width: 80px;
 }
 
 .sorting-type {
-  flex: 53px 0 0;
-  padding-right: 31px;
+  min-width: 80px;
 }
 
 .sorting-popular {
-  flex: 118px 0 0;
-  padding-right: 13px;
+  min-width: 140px;
 }
 
 .sorting-padding {
   height: 70px;
   background-color: #ebebeb;
-  flex: 200px 0 0;
+  min-width: 200px;
 }
 
 .sorting-button {
@@ -1592,6 +1586,7 @@ a {
   background-color: #ebebeb;
   flex: 196px 0 0;
   position: relative;
+  min-width: 200px;
 }
 
 .sort-button-up {
@@ -1638,8 +1633,6 @@ a {
 .sorting-popular:focus {
   color: rgba(0, 0, 0, 1);
 }
-
-
 
 .range-filter {
   width: 200px;
@@ -2401,4 +2394,10 @@ a {
 
 .monopod {
   margin-top: 43px;
+}
+
+* {
+
+background: rgba(234, 255, 45, 0.2);
+box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
